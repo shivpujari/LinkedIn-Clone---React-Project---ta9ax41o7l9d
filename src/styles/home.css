@@ -352,55 +352,159 @@ cursor: pointer;
 }
 
 
-@media screen and (max-width:600px) {
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+@media only screen and (max-width: 600px) {
+    .navStart {
+        width: 100%;
+
     }
-    .navStart{
-        width: 100vw;
-    }
-    .smallLogo{
-        width: 2%;
-    }
-    .faIconsIcon{
-    margin: 10px 20px 10px 50px;
-    font-size: 15px;
-    }
-    .MiddleBar{
-        width: 40%;
-    }
-    .RightSideBar{
-        width: 20%;
-    }
-    .upperDiv{
-        width: 100vw;
-        margin: 40px 0px 0px 40px;
-    }
-    .lowerDiv{
+
+    .smallLogo {
         display: none;
     }
-    .RightSideBar{
+
+    .input1 {
+        width: 98%;
+    }
+
+    .homeIcon {
+        display: none;
+
+    }
+
+    .networkIcon {
+        display: none;
+
+    }
+
+    .jobsIcon {
+        display: none;
+
+    }
+
+    .msgIcon {
+        display: none;
+
+    }
+
+    .notificationsIcon {
+        display: none;
+
+    }
+
+    .meIcon {
         display: none;
     }
-    .PostShare{
-        width: 100vw;
-       margin: 380px 0px 0px -100px;
+
+    .faIconsIcon {
+        display: none;
     }
-    .postDiv{
-        width: 100vw;
-        margin: 10px 0px 0px -100px;
+
+    .faIcons {
+        display: none;
+
     }
-    .photoIcon{
-        margin: 5px 10px 0px 10px;
+
+    .leftSideBar {
+        display: none;
     }
-    .PostShare button{
+
+    .RightSideBar {
+        display: none;
+
+    }
+
+    .MiddleBar {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .PostShare button {
+        height: 25px;
         width: 9%;
+        font-size: 10px;
+        margin: 0px 5px 10px 5px;
+        border-radius: 15px;
+
     }
 
+    .PostShare {
+        margin: 5px 0px 10px 0px;
 
+    }
 
+    .PostShare input {
+        margin: 0px 10px 10px 10px;
 
-    
+    }
+
+    .shareIcon {
+        display: none;
+    }
+
+    .photoIcon {
+        font-size: 18px;
+        margin: 5px 10px 0px 30px;
+    }
+
+    .videosIcon {
+        font-size: 18px;
+        margin: 5px 10px 0px 30px;
+    }
+
+    .eventsIcon {
+        font-size: 18px;
+        margin: 5px 10px 0px 30px;
+    }
+
+    .articleIcon {
+        font-size: 18px;
+        margin: 5px 10px 0px 30px;
+    }
+
+    .postDiv .dislikeArrow {
+        font-size: 18px;
+    }
+
+    .likeArrow {
+        font-size: 18px;
+        margin: 10px 0px 10px 10px;
+
+    }
+
+    .commentArrow {
+        font-size: 18px;
+        margin: 5px 0px 10px 13px;
+
+    }
+
+    .repostArrow {
+        display: none;
+    }
+
+    .commentArrow span {
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 300px) {
+    .photoIcon {
+        font-size: 18px;
+        margin: 5px 10px 0px 15px;
+    }
+
+    .videosIcon {
+        font-size: 18px;
+        margin: 5px 10px 0px 15px;
+    }
+
+    .eventsIcon {
+        font-size: 18px;
+        margin: 5px 10px 0px 15px;
+    }
+
+    .articleIcon {
+        font-size: 18px;
+        margin: 5px 10px 0px 15px;
+    }
 }
