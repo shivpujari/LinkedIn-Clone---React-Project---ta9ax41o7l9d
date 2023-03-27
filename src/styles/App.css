@@ -1,136 +1,251 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
- *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
+
+body {}
+
+.navbar {
+  height: 90px;
+  width: 100%;
 }
-.navbar{
-    height: 90px;
-    width: 100%;
+
+.loginLogo {
+  height: 150px;
+  width: 12%;
+  display: flex;
+  float: left;
+  margin: -30px 0px 0px 50px;
 }
-.loginLogo{
-    height: 150px;
-    width: 12%;
-    display: flex;
-   float: left;
-    margin: -30px 0px 0px 50px;
+
+.navbar .discover {
+  float: right;
+  margin: 20px 20px 10px 20px;
+  font-size: 25px;
+  color: grey;
 }
-.navbar .discover{
-    float: right;
-    margin: 20px 20px 10px 20px;
-    font-size: 25px;
-    color: grey;
+
+.navbar .discover p {
+  margin-left: -9px;
+  font-size: 15px;
+  color: gray;
+  letter-spacing: 1px;
+  font-family: sans-serif;
 }
-.navbar .discover p{
-    margin-left:-9px ;
-    font-size: 15px;
-    color: gray;
-    letter-spacing: 1px;
-    font-family: sans-serif;
+
+.navbar .join {
+  float: right;
+  margin: 20px 0px 10px 10px;
+  height: 50px;
+  width: 8%;
+  border-radius: 25px;
+  border: 0;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 600;
 }
-.navbar .join{
-    float: right;
-    margin: 20px 0px 10px 10px;
-    height: 50px;
-    width: 8%;
-    border-radius: 25px;
-    border: 0;
-   background-color: #fff;
-font-size: 16px;
-font-weight: 600;
+
+.navbar .sign {
+  float: right;
+  margin: 20px 70px 10px 15px;
+  height: 50px;
+  width: 8%;
+  border-radius: 25px;
+  border: 1.5px solid #0A66C2;
+  background-color: #fff;
+  color: #0A66C2;
+  font-size: 16px;
+  font-weight: 600;
 }
-.navbar .sign{
-    float: right;
-    margin: 20px 70px 10px 15px;
-    height: 50px;
-    width: 8%;
-    border-radius: 25px;
-    border: 1.5px solid #0A66C2;
-background-color: #fff;
-color: #0A66C2;
-font-size: 16px;
-font-weight: 600;
+
+.divAfterNav {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  /* border: 1px solid green; */
 }
-.divAfterNav{
-    height: 600px;
-    width: 100%;
-    display: flex;
-    /* border: 1px solid green; */
+
+.leftSide {
+  height: 600px;
+  width: 50%;
+  /* border: 1px solid green; */
 }
-.leftSide{
-    height: 600px;
-    width: 50%;
-    /* border: 1px solid green; */
-}
-.leftSide p{
-    font-size: 55px;
-    word-spacing: 10;
-    margin: 15px 0px 30px 50px;
-    color: #8F5849;
-    font-family: sans-serif;
-    
-}
-.leftSide input{
-    height: 50px;
-    width: 62%;
-    margin: 10px 0px 20px 50px;
-}
-.leftSide label{
-    margin: 10px 0px 10px 50px;
-    font-family: sans-serif;
+
+.leftSide p {
+  font-size: 55px;
+  word-spacing: 10;
+  margin: 15px 0px 30px 50px;
+  color: #8F5849;
+  font-family: sans-serif;
 
 }
-.leftSide .forPass{
-    font-size: 18px;
-    font-family: sans-serif;
-    margin: 10px 0px 10px 50px;
-    text-decoration: none;
-    color: #0A66C2;
+
+.leftSide input {
+  height: 50px;
+  width: 62%;
+  margin: 10px 0px 20px 50px;
 }
-.leftSide .signIn{
-    /* height: 50px; */
-    height: 50px;
-    width: 63%;
-    border: 0;
-    /* font-size: 20px; */
-    background-color: #0A66C2;
-    border-radius: 25px;
-    color: #fff;
-    font-family: sans-serif;
-    margin: 30px 0px 30px 50px;
+
+.leftSide label {
+  margin: 10px 0px 10px 50px;
+  font-family: sans-serif;
+
 }
-.leftSide .firsthr{
-    width: 28%;
-    margin-left: 50px;
-    /* margin-top: 19px; */
+
+.leftSide .forPass {
+  font-size: 18px;
+  font-family: sans-serif;
+  margin: 10px 0px 10px 50px;
+  text-decoration: none;
+  color: #0A66C2;
 }
-.leftSide .secondhr{
-    width: 28%;
-    margin-left: 270px;
-    margin-top: -9px;
+
+.leftSide .signIn {
+  /* height: 50px; */
+  height: 50px;
+  width: 63%;
+  border: 0;
+  /* font-size: 20px; */
+  background-color: #0A66C2;
+  border-radius: 25px;
+  color: #fff;
+  font-family: sans-serif;
+  margin: 30px 0px 30px 50px;
 }
-.orr{
-    margin-left: 238px;
-    margin-top: -9px;
+
+.leftSide .firsthr {
+  width: 28%;
+  margin-left: 50px;
+  /* margin-top: 19px; */
 }
-.leftSide .newtoLinkedIn{
-    height: 53px;
-    width: 63%;
-    border: 1.5px solid black;
-    border-radius: 30px;
-    font-family: sans-serif;
-    margin: 15px 0px 30px 50px;
-    background-color: #fff;
-    font-size: 15px;
+
+.leftSide .secondhr {
+  width: 28%;
+  margin-left: 270px;
+  margin-top: -9px;
 }
-.rightWithImg{
-    height: 600px;
-    width: 50%;
+
+.orr {
+  margin-left: 238px;
+  margin-top: -9px;
 }
-.rightWithImg img{
+
+.leftSide .newtoLinkedIn {
+  height: 53px;
+  width: 63%;
+  border: 1.5px solid black;
+  border-radius: 30px;
+  font-family: sans-serif;
+  margin: 15px 0px 30px 50px;
+  background-color: #fff;
+  font-size: 15px;
+}
+
+.rightWithImg {
+  height: 600px;
+  width: 50%;
+}
+
+.rightWithImg img {
+  width: 100%;
+  margin-top: 70px;
+  height: 500px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
     width: 100%;
-    margin-top: 70px;
-    height: 500px;
+  }
+
+  .loginLogo {
+    height: 80px;
+    margin: 5px 0px 0px 20px;
+  }
+
+  .navbar .discover {
+    display: none;
+  }
+
+  .navbar .discover p {
+    display: none;
+  }
+
+  .navbar .sign {
+    width: 15%;
+    font-size: 13px;
+
+  }
+
+  .navbar .join {
+    width: 15%;
+    font-size: 13px;
+
+
+  }
+
+  .leftSide {
+    height: 300px;
+    width: 100%;
+  }
+
+  .leftSide p {
+    font-size: 28px;
+    word-spacing: 0;
+    margin: 15px 0px 0px 20px;
+  }
+
+  .leftSide input {
+    width: 95%;
+    margin: 10px 0px 20px 20px;
+
+  }
+
+  .leftSide label {
+    margin: 10px 0px 10px 20px;
+
+  }
+
+  .leftSide .forPass {
+    margin: 10px 0px 10px 20px;
+  }
+
+  .leftSide .signIn {
+    width: 95%;
+    margin: 30px 0px 10px 20px;
+
+  }
+
+  .leftSide .firsthr {
+    display: none;
+  }
+
+  .leftSide .secondhr {
+    display: none;
+
+  }
+
+  .leftSide .newtoLinkedIn {
+    width: 95%;
+    margin: 5px 0px 30px 20px;
+  }
+
+  .rightWithImg {
+    height: 200px;
+    width: 100%;
+    margin: 500px 0px 0px -300px;
+  }
+
+  .rightWithImg img {
+    margin: -100px 10px 0px 10px;
+    width: 90%;
+
+  }
+
+  .orr {
+    margin: 10px 0px 0px 150px;
+  }
+
 }

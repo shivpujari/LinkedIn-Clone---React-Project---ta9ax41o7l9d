@@ -129,7 +129,7 @@ function Home() {
                   {like ? <i className="fa fa-thumbs-o-down dislikeArrow"></i> : <i className="fa fa-thumbs-o-up likeArrow"></i>}
                   <span onClick={() => setLike(!like)}>{like ? <span>DisLike</span> : <span>Like</span>}</span>
                   <i className="fa fa-comments commentArrow" onClick={() => { clickFn(index) }}><span>Comment</span></i>
-                  <i className="fa fa-retweet commentArrow"><span>Repost</span></i>
+                  <i className="fa fa-retweet repostArrow"><span>Repost</span></i>
                   <i className="fa fa-paper-plane commentArrow" ><span>Send</span></i>
                   <i className="fa fa-trash commentArrow" onClick={() => { deletePost(index) }} ><span>Delete</span></i>
                 </div>

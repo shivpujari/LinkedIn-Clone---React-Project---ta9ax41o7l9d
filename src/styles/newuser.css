@@ -1,58 +1,68 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: rgb(247, 244, 238); 
+
+body {
+    background-color: rgb(247, 244, 238);
 }
-.newUserNav{
+
+.newUserNav {
     height: 90px;
     width: 100%;
     /* background-color: aqua; */
 }
-.newUserNav img{
+
+.newUserNav img {
     height: 150px;
     width: 15%;
     margin: -20px 0px 10px 50px;
 }
-.centerDiv p{
+
+.centerDiv p {
     text-align: center;
     font-size: 33px;
     font-family: sans-serif;
     margin: 0px 0px 20px 0px;
 }
-.formDiv{
+
+.formDiv {
     height: 400px;
-   border-radius: 8px;
+    border-radius: 8px;
     width: 30%;
-     margin-left: 450px;
-     box-shadow: 5px solid whitesmoke;
-     background-color: #fff;
-   
+    margin-left: 450px;
+    box-shadow: 5px solid whitesmoke;
+    background-color: #fff;
+
 }
-.formDiv label{
+
+.formDiv label {
     margin: 40px 10px 20px 20px;
     margin-top: 20px;
     color: grey;
 }
+
 .formDiv input {
     height: 35px;
     width: 90%;
     margin: 5px 10px 20px 20px;
 
 }
-.formDiv p{
+
+.formDiv p {
     font-size: 13px;
     color: grey;
     margin: 0px 30px 10px 30px;
     text-align: center;
 }
-.formDiv p span{
+
+.formDiv p span {
     color: #0A66C2;
     font-weight: 600;
 }
-.formDiv button{
+
+.formDiv button {
     height: 47px;
     width: 90%;
     background-color: #0A66C2;
@@ -62,10 +72,31 @@ body{
     font-weight: 600;
     margin-left: 20px;
 }
-.formDiv h4{
+
+.formDiv h4 {
     margin: 10px 0px 0px 90px;
 }
 
-.lowerDiv{
-    
+@media only screen and (max-width: 600px) {
+    .centerDiv p {
+        align-items: center;
+        font-size: 20px;
+        margin-left: 50px;
+
+    }
+
+    .formDiv {
+        margin-left: 10px;
+        width: 95%;
+        height: 450px;
+    }
+
+    .formDiv label {
+        margin: 0px 0px 5px 10px;
+    }
+
+    .formDiv input {
+        margin: 10px 0px 5px 10px;
+
+    }
 }

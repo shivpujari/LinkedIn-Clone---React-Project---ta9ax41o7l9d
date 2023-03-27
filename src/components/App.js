@@ -9,7 +9,7 @@ const App = () => {
 
   return (
     <div id="main">
-    {<BrowserRouter>
+    { <BrowserRouter>
 				<Routes>
 					<Route path="/" element={<Login/>}/>
 					<Route path="/home" element={<Home/>}/>
@@ -17,6 +17,7 @@ const App = () => {
 				</Routes>
 			</BrowserRouter>
     }
+    
     
     </div>
   )
