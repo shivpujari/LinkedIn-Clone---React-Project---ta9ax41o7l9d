@@ -66,6 +66,26 @@ body{
     margin: 10px 0px 0px 90px;
 }
 
-.lowerDiv{
-    
+@media only screen and (max-width: 600px) {
+    .centerDiv p {
+        align-items: center;
+        font-size: 20px;
+        margin-left: 50px;
+
+    }
+
+    .formDiv {
+        margin-left: 10px;
+        width: 95%;
+        height: 450px;
+    }
+
+    .formDiv label {
+        margin: 0px 0px 5px 10px;
+    }
+
+    .formDiv input {
+        margin: 10px 0px 5px 10px;
+
+    }
 }
