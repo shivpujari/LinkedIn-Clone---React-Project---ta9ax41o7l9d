@@ -134,3 +134,97 @@ font-weight: 600;
     margin-top: 70px;
     height: 500px;
 }
+@media only screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+  }
+
+  .loginLogo {
+    height: 80px;
+    margin: 5px 0px 0px 20px;
+  }
+
+  .navbar .discover {
+    display: none;
+  }
+
+  .navbar .discover p {
+    display: none;
+  }
+
+  .navbar .sign {
+    width: 15%;
+    font-size: 13px;
+
+  }
+
+  .navbar .join {
+    width: 15%;
+    font-size: 13px;
+
+
+  }
+
+  .leftSide {
+    height: 300px;
+    width: 100%;
+  }
+
+  .leftSide p {
+    font-size: 28px;
+    word-spacing: 0;
+    margin: 15px 0px 0px 20px;
+  }
+
+  .leftSide input {
+    width: 95%;
+    margin: 10px 0px 20px 20px;
+
+  }
+
+  .leftSide label {
+    margin: 10px 0px 10px 20px;
+
+  }
+
+  .leftSide .forPass {
+    margin: 10px 0px 10px 20px;
+  }
+
+  .leftSide .signIn {
+    width: 95%;
+    margin: 30px 0px 10px 20px;
+
+  }
+
+  .leftSide .firsthr {
+    display: none;
+  }
+
+  .leftSide .secondhr {
+    display: none;
+
+  }
+
+  .leftSide .newtoLinkedIn {
+    width: 95%;
+    margin: 5px 0px 30px 20px;
+  }
+
+  .rightWithImg {
+    height: 200px;
+    width: 100%;
+    margin: 500px 0px 0px -300px;
+  }
+
+  .rightWithImg img {
+    margin: -100px 10px 0px 10px;
+    width: 90%;
+
+  }
+
+  .orr {
+    margin: 10px 0px 0px 150px;
+  }
+
+}
