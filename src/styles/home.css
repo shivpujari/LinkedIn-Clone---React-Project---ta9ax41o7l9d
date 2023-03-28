@@ -357,6 +357,11 @@ cursor: pointer;
         width: 100%;
 
     }
+     .navStart button{
+        width: 10%;
+        font-size: 11px;
+    }
+    
 
     .smallLogo {
         display: none;
