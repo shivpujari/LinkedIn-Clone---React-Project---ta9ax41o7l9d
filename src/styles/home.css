@@ -265,6 +265,10 @@ cursor: pointer;
     font-size: 25px;
     margin: 10px 0px 10px 40px;
 }
+.repostArrow span{
+ font-size: 17px;
+    margin: 5px 0px 10px 0px;
+    }
 
 .commentArrow span{
     font-size: 17px;
