@@ -3,6 +3,8 @@ import smallLogo from '../Images/smallLogo.png'
 import '../styles/home.css'
 import { useState } from 'react'
 import imgTwoLadies from '../Images/twoLadies.png'
+import { useNavigate } from 'react-router'
+
 
 
 
@@ -34,7 +36,7 @@ const ShareAble = (props) => {
   )
 }
 function Home() {
-
+  const navigate = useNavigate();
   const [input, setInput] = useState();
   const [post, setPost] = useState([]);
   const [like, setLike] = useState(false);
@@ -61,6 +63,10 @@ function Home() {
     tempArr.splice(index, 1);
     setPost([...tempArr]);
   }
+    const handleLogout=()=>{
+    localStorage.removeItem("name",names);
+    navigate("/");
+  }
 
 
   return (
@@ -75,6 +81,7 @@ function Home() {
         <i className="fa fa-bell-o faIcons" ><p className='notificationsIcon'>Notifications</p></i>
         <i className="fa fa-user-circle-o faIcons" ><p className='meIcon'>Me</p></i>
         <i className="fa fa-th faIcons"><p>Work</p></i>
+        <button onClick={handleLogout}>Logout</button>
 
       </nav>
       <div className='mainContainer'>
