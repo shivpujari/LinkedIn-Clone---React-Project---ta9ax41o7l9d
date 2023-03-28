@@ -261,9 +261,13 @@ cursor: pointer;
 
     margin: 10px 0px 10px 40px;
 }
+.repostArrow {
+    font-size: 25px;
+    margin: 10px 0px 10px 40px;
+}
+
 .commentArrow span{
     font-size: 17px;
-    /* color: grey; */
     margin: 5px 0px 10px 0px;
 
 }
