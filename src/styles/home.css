@@ -424,52 +424,29 @@
         width: 100%;
 
     }
+    .navStart button{
+        width: 10%;
+        font-size: 11px;
+    }
 
     .smallLogo {
         display: none;
     }
 
     .input1 {
-        width: 98%;
+     display: none;
     }
+    .navStart .faIconsIcon{
+    margin: 10px 13px 0px 10px;
+    font-size: 21px; 
+     
+   }
 
-    .homeIcon {
-        display: none;
+   .navStart .faIcons{
+    margin: 10px 13px 0px 10px;
+    font-size: 21px;
+   }
 
-    }
-
-    .networkIcon {
-        display: none;
-
-    }
-
-    .jobsIcon {
-        display: none;
-
-    }
-
-    .msgIcon {
-        display: none;
-
-    }
-
-    .notificationsIcon {
-        display: none;
-
-    }
-
-    .meIcon {
-        display: none;
-    }
-
-    .faIconsIcon {
-        display: none;
-    }
-
-    .faIcons {
-        display: none;
-
-    }
 
     .leftSideBar {
         display: none;
@@ -554,7 +531,8 @@
 
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
+
     .photoIcon {
         font-size: 18px;
         margin: 5px 10px 0px 15px;
@@ -574,4 +552,11 @@
         font-size: 18px;
         margin: 5px 10px 0px 15px;
     }
+    .navStart .faIcons{
+        display: none;
+    }
+    .navStart .faIconsIcon{
+        display: none;
+    }
+
 }

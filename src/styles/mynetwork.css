@@ -1,0 +1,236 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.navStart {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+}
+
+.smallLogo {
+    height: 35px;
+    width: 3%;
+    margin: 10px 0px 0px 70px;
+}
+
+.input1 {
+    height: 35px;
+    width: 17%;
+    margin: 10px 0px 0px 10px;
+    border: 0;
+    background-color: aliceblue;
+}
+
+.faIconsIcon {
+    margin: 10px 20px 10px 190px;
+    font-size: 28px;
+    color: grey;
+}
+
+.faIconsIcon p {
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.faIcons {
+    margin: 10px 15px 10px 39px;
+    font-size: 25px;
+    color: grey;
+}
+
+.faIcons p {
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.homeIcon {
+    margin-left: -4px;
+}
+
+.networkIcon {
+    margin-left: -16px;
+}
+
+.msgIcon {
+    margin-left: -16px;
+
+}
+
+.notificationsIcon {
+    margin-left: -16px;
+
+}
+
+.meIcon {
+    margin-left: 4px;
+}
+
+.navStart button {
+    height: 40px;
+    width: 4%;
+    border-radius: 15px;
+    border: 1px solid grey;
+    margin: 7px 0px 0px 5px;
+    background-color: #0A66C2;
+    color: #fff;
+
+}
+
+.networkLink{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: aliceblue;
+}
+.networkLeft{
+    height: 500px;
+    width: 23%;
+    border: 1px solid rgb(171, 166, 166);
+    background-color: #fff;
+    margin: 20px 20px 0px 60px;
+    border-radius: 10px;
+}
+.networkLeft h3{
+    margin: 10px 0px 5px 15px;
+   
+}
+.IconsInNetwork{
+    font-size: 20px;
+    color: rgb(95, 91, 91);
+    margin: 15px 0px 10px 15px ;
+}
+.IconsInNetwork span{
+    margin-left: 15px;
+}
+.IconsInNetwork p{
+   margin: -17px 0px 0px 240px;  
+}
+.networkRight{
+    height: 100vh;
+    width: 67%;
+    /* border: 1px solid black; */
+    margin: 20px 40px 0px 10px;
+
+}
+.divWithNewtonlogo{
+    height: 170px;
+    width: 100%;
+    border: 1px solid rgb(159, 150, 150);
+    background-color: #fff;
+    border-radius: 10px;
+}
+.divWithNewtonlogo h3{
+    margin: 5px 0px 5px 15px;
+}
+.divWithNewtonlogo img{
+    height: 80px;
+    width: 10%;
+}
+.divWithNewtonlogo p{
+    margin-left:15px ;
+}
+.divWithNewtonlogo button{
+    height: 20px;
+    width: 10%;
+    background-color: #0A66C2;
+    border-radius: 5px;
+    border: 0;
+    margin-left:15px ;
+    
+}
+.celebrationDiv{
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid rgb(159, 150, 150);
+ margin: 15px 0px 10px 0px;
+ border-radius: 10px;
+
+
+}
+.celebrationDiv h4{
+    margin: 9px 0px 0px 15px;
+}
+.celebrationDiv p{
+    margin: 3px 0px 0px 15px;
+}
+.divWithFollow{
+    height: 230px;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid rgb(171, 166, 166);
+    border-radius: 10px;
+}
+.followinDIv{
+    height: 200px;
+    width: 30%;
+    border: 1px solid rgb(171, 166, 166);
+    margin: 20px 10px 0px 15px;
+    border-radius: 10px;
+}
+
+.followImg{
+    height: 75px;
+    width: 94%;
+    margin: 10px 0px 10px 15px;
+    background-image: url("../Images/teslaback.jpg");
+    background-size: cover;
+
+}
+.followImg img{
+    height: 75px;
+    width: 22%;
+}
+.followinDIv button{
+    height: 30px;
+    width: 93%;
+    border-radius: 19px;
+    border: 2px solid #0A66C2;
+    color: #0A66C2;
+    background-color: #fff;
+    margin: 5px 0px 0px 5px ;
+
+}
+@media only screen and (max-width: 600px) {
+    .smallLogo{
+        height: 40px;
+        margin: 10px 0px 0px 20px;
+    }
+    .divWithNewtonlogo img{
+        height: 50px;
+        width: 10%;
+    }
+    .divWithNewtonlogo button{
+        font-size: 12px;
+        width: 13%;
+    }
+    .networkLeft{
+        display: none;
+    }
+    .networkRight{
+        width: 100%;
+    }
+    .followinDIv{
+        height: 300px;
+    }
+    .divWithFollow{
+        height: 330px;
+    }
+   .followImg {
+    width: 89%;
+
+   }
+   
+
+
+}
+
+
+

@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.jobsMain{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: aliceblue;
+
+}
+.jobsLeft{
+    height: 400px;
+    width: 23%;
+    border: 1px solid rgb(171, 166, 166);
+    background-color: #fff;
+    margin: 20px 20px 0px 60px;
+    border-radius: 10px;
+}
+.jobsMiddle{
+    height: 730px;
+    width: 40%;
+    border: 1px solid rgb(171, 166, 166);
+    margin: 20px 40px 0px 10px;
+    background-color: #fff;
+    border-radius: 15px;
+
+}
+.jobsMiddle .h3re{
+    margin: 10px 0px 2px 20px;
+}
+.jobsMiddle .basedon{
+    margin: 1px 0px 30px 20px;
+}
+
+.jobInfoinDiv{
+    height: 150px;
+    width: 100%;
+}
+.jobInfoinDiv h3{
+    margin: 10px 0px 1px 40px;
+    color: #0A66C2;
+}
+.jobInfoinDiv .companyJobs{
+    margin: 1px 0px 1px 40px;
+
+}
+.jobInfoinDiv .companyLocate{
+    margin: 1px 0px 1px 40px;
+
+}
+.jobInfoinDiv .companydata{
+    margin: 10px 0px 1px 40px;
+
+}
+.jobInfoinDiv button{
+    height: 30px;
+    width: 22%;
+    background-color: #0A66C2;
+    border: 0;
+    border-radius: 8px;
+    margin: 5px 0px 10px 40px;
+    color: #fff;
+}

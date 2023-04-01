@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.mainNotifications{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: aliceblue;
+
+}
+.leftNoti{
+    height: 400px;
+    width: 23%;
+    /* border: 1px solid rgb(171, 166, 166); */
+    /* background-color: #fff; */
+    margin: 20px 20px 0px 60px;
+    border-radius: 10px;
+}
+.upnoti{
+    height: 100px;
+    width: 100%;
+    border: 1px solid rgb(171, 166, 166);
+    background-color: #fff;
+    margin: 0px 20px 0px 0px;
+    border-radius: 10px;
+
+}
+.upnoti h4{
+    margin: 20px 20px 0px 20px;
+}
+.upnoti a{
+    margin: 20px 20px 0px 20px;
+}
+.middleNoti{
+    height: 730px;
+    width: 40%;
+    border: 1px solid rgb(171, 166, 166);
+    margin: 20px 40px 0px 10px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+.notiMap{
+    height: 70px;
+    width: 100%;
+    display: flex;
+
+}
+.notiMap p{
+    margin: 30px 0px 10px 20px ;
+}
+.notiMap img{
+    height: 40px;
+    width: 40px;
+    margin: 30px 0px 0px 20px ;
+}

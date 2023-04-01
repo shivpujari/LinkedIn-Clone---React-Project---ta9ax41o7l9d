@@ -1,12 +1,14 @@
 import React from 'react'
-import smallLogo from '../Images/smallLogo.png'
-import '../styles/home.css'
 import { useState } from 'react'
 import imgTwoLadies from '../Images/twoLadies.png'
-
-
+import { useNavigate } from 'react-router'
+import Login from './Login'
+import MyNetwork from './MyNetwork'
+import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar'
 
 const ShareAble = (props) => {
+  
   const [inputs, setInputs] = useState("");
   let names = localStorage.getItem('name');
 
@@ -34,7 +36,7 @@ const ShareAble = (props) => {
   )
 }
 function Home() {
-
+  const navigate = useNavigate()
   const [input, setInput] = useState();
   const [post, setPost] = useState([]);
   const [like, setLike] = useState(false);
@@ -63,20 +65,10 @@ function Home() {
   }
 
 
+
   return (
     <div>
-      <nav className='navStart'>
-        <img className='smallLogo' src={smallLogo} />
-        <input className='input1' type="search" placeholder='Search ' />
-        <i className="fa fa-home faIconsIcon"><p className='homeIcon'>Home</p></i>
-        <i className="fa fa-users faIcons"><p className='networkIcon'>My Network</p></i>
-        <i className="fa fa-briefcase faIcons" ><p className='jobsIcon'>Jobs</p></i>
-        <i className="fa fa-commenting-o faIcons" ><p className='msgIcon'>Messaging</p></i>
-        <i className="fa fa-bell-o faIcons" ><p className='notificationsIcon'>Notifications</p></i>
-        <i className="fa fa-user-circle-o faIcons" ><p className='meIcon'>Me</p></i>
-        <i className="fa fa-th faIcons"><p>Work</p></i>
-
-      </nav>
+      <Navbar/>
       <div className='mainContainer'>
         <div className='leftSideBar'>
           <div className='upperDiv'>
