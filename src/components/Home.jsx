@@ -63,6 +63,10 @@ function Home() {
     tempArr.splice(index, 1);
     setPost([...tempArr]);
   }
+    const handleLogout=()=>{
+    localStorage.removeItem("name",names);
+    navigate("/");
+  }
 
 
 
