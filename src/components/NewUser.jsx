@@ -65,7 +65,7 @@ alert("Registered successfully")
     <label htmlFor="Name">Email or phone number</label><br></br>
     <input type="email" onChange={e=> setEmaill(e.target.value)} value={email} /><br></br>
     <label htmlFor="Name">Password (6 or more characters)</label><br></br>
-    <input type="password" onChange={e=> setPassword(e.target.value)} value={password} /><br></br>
+    <input type="password" placeholder='Ex: Abc@12' onChange={e=> setPassword(e.target.value)} value={password} /><br></br>
     <p>By clicking Agree & Join, you agree to the LinkedIn<span>User Agreement,
      Privacy Policy,</span> and<span> Cookie Policy.</span></p>
      <button onClick={handleSubmit}>Agree & Join</button>

@@ -1,17 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
-import imgTwoLadies from '../Images/twoLadies.png'
-import { useNavigate } from 'react-router'
-import Login from './Login'
-import MyNetwork from './MyNetwork'
-import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar'
+import RightSidebar from './RightSidebar'
+import LeftSideBar from './LeftSideBar'
 
 const ShareAble = (props) => {
   
   const [inputs, setInputs] = useState("");
   let names = localStorage.getItem('name');
-
 
   const commentPost = () => {
     let objs = { inputs };
@@ -36,7 +32,8 @@ const ShareAble = (props) => {
   )
 }
 function Home() {
-  const navigate = useNavigate()
+  
+ 
   const [input, setInput] = useState();
   const [post, setPost] = useState([]);
   const [like, setLike] = useState(false);
@@ -63,43 +60,12 @@ function Home() {
     tempArr.splice(index, 1);
     setPost([...tempArr]);
   }
-    const handleLogout=()=>{
-    localStorage.removeItem("name",names);
-    navigate("/");
-  }
-
-
-
+ 
   return (
     <div>
       <Navbar/>
       <div className='mainContainer'>
-        <div className='leftSideBar'>
-          <div className='upperDiv'>
-            <div className='camera'>
-              <i className="fa fa-camera cameraIcon"></i>
-
-            </div>
-            <h3 className='h3'>Welcome, {names}</h3>
-            <hr></hr>
-            <p className='connections'> Connections</p>
-            <p className='growYour'>Grow your network</p>
-
-            <hr></hr>
-            <p className='access'>Access exclusive Tools & insights</p>
-            <hr></hr>
-            <i className="fa fa-bookmark bookmark"> My Items</i>
-          </div>
-          <div className='lowerDiv'>
-            <p>Recent</p>
-            <p>CloudComputing</p>
-            <h5>Groups</h5>
-            <h5>Events</h5>
-            <h5>Followed Hashtags</h5>
-            <hr></hr>
-            <p>Discover more</p>
-          </div>
-        </div>
+       <LeftSideBar/>
         <div className='MiddleBar'>
           <div className='PostShare'>
             <i className="fa fa-user-circle-o shareIcon" ></i>
@@ -117,41 +83,38 @@ function Home() {
               <div>
                 <div className='postDiv'>
                   <i className="fa fa-user-circle-o postME" ></i>
-                  <h2>{names}</h2>
-                  <p className='testingPara'>This is Testing Para</p>
+                  <h3>{names}</h3>
+                  <p className='testingPara'>HTML || CSS || JavaScript || React JS || Redux || Bootstrap || Java || jQuery</p>
                   <hr></hr>
-                  <h3 className='testingHeading'>{item.msg}</h3>
+                  <p className='testingHeading'>{item.msg}</p>
                   <hr></hr>
                   {like ? <i className="fa fa-thumbs-o-down dislikeArrow"></i> : <i className="fa fa-thumbs-o-up likeArrow"></i>}
                   <span onClick={() => setLike(!like)}>{like ? <span>DisLike</span> : <span>Like</span>}</span>
                   <i className="fa fa-comments commentArrow" onClick={() => { clickFn(index) }}><span>Comment</span></i>
-                  <i className="fa fa-retweet repostArrow"><span>Repost</span></i>
-                  <i className="fa fa-paper-plane commentArrow" ><span>Send</span></i>
                   <i className="fa fa-trash commentArrow" onClick={() => { deletePost(index) }} ><span>Delete</span></i>
                 </div>
                 {item.clicked && <ShareAble posts={post} setpost={setPost} index={index} />}
               </div>
             ))}
-
+            <div className="dummyPost">
+            <i className="fa fa-user-circle-o postME" ></i>
+            <h3>Shivani Pujari</h3>
+            <p className='testingPara'>Project Owner</p>
+            <hr></hr>
+            <p className='testingHeading'>
+            LinkedIn is the world's largest professional network on the internet.
+             You can use LinkedIn to find the right job or internship, connect and strengthen professional relationships, and learn the
+             skills you need to succeed in your career
+            </p>
+            <hr></hr>
+            {like ? <i className="fa fa-thumbs-o-down dislikeArrow"></i> : <i className="fa fa-thumbs-o-up likeArrow"></i>}
+            <span onClick={() => setLike(!like)}>{like ? <span>DisLike</span> : <span>Like</span>}</span>
+            <i className="fa fa-comments commentArrow"><span>Comment</span></i>
+            <i className="fa fa-trash commentArrow" ><span>Delete</span></i>
+            </div>
           </div>
         </div>
-        <div className='RightSideBar'>
-          <div className='upperRight'>
-            <h5>Add to Your Feed</h5>
-            <p>#Linkedln</p>
-            <button>Follow</button>
-            <p>#Website</p>
-            <button>Follow</button><br></br>
-            <a href=''>View all Recommendations</a>
-          </div>
-          <div className='middleRight'>
-            <img src={imgTwoLadies} />
-          </div>
-          <div className='lowerRight'>
-            <h4>Design and develop by Shivani</h4>
-            <a href=''>Github profile link</a>
-          </div>
-        </div>
+      <RightSidebar/>
       </div>
 
     </div>

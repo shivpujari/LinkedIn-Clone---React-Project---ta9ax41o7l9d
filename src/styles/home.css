@@ -78,7 +78,6 @@
     margin: 7px 0px 0px 5px;
     background-color: #0A66C2;
     color: #fff;
-
 }
 
 .mainContainer {
@@ -89,7 +88,7 @@
 
 .leftSideBar {
     height: 500px;
-    width: 27%;
+    width: 100%;
     font-family: sans-serif;
 }
 
@@ -100,7 +99,7 @@
 
 .RightSideBar {
     height: 500px;
-    width: 24%;
+    width: 100%;
 }
 
 .upperDiv {
@@ -269,9 +268,9 @@
 
 .postDiv {
     height: 270px;
-    width: 93%;
+    width: 98%;
     border: 1px solid grey;
-    margin: 10px 0px 10px 17px;
+    margin: 10px 0px 10px 5px;
     border-radius: 20px;
     background-color: #fff;
 }
@@ -281,16 +280,24 @@
     margin: 10px 0px 0px 20px;
 }
 
-.postDiv h2 {
+.postDiv h3 {
     margin: 5px 0px 0px 20px;
+}
+
+.dummyPost h3{
+    margin: 5px 0px 0px 20px;
+
 }
 
 .testingPara {
     margin: 10px 0px 5px 20px;
+    font-size: 12.5px;
 }
 
 .testingHeading {
-    margin: 5px 0px 80px 20px;
+    height: 120px;
+    margin: 5px 0px 0px 20px;
+
 }
 
 .likeArrow {
@@ -307,12 +314,9 @@
 
 .commentArrow {
     font-size: 25px;
-    margin: 10px 0px 10px 40px;
+    margin: 10px 0px 10px 140px;
 }
-.repostArrow {
-    font-size: 25px;
-    margin: 10px 0px 10px 40px;
-}
+
 
 .commentArrow span {
     font-size: 17px;
@@ -414,6 +418,16 @@
 
 .showComnt {
     margin: -4px 0px 5px 13px;
+
+}
+
+.dummyPost{
+    height: 270px;
+    width: 98%;
+    border: 1px solid grey;
+    margin: 10px 0px 10px 5px;
+    border-radius: 20px;
+    background-color: #fff;
 
 }
 
